@@ -57,7 +57,6 @@ export class TreeBinary {
 
     deleteNode(data) {
         // tim node
-
         let nodeDelete = null;
         let parentsNode = null;
         let defaultRoot = this.root;
@@ -84,7 +83,7 @@ export class TreeBinary {
         this.root = defaultRoot
 
         if (nodeDelete) {
-            // xoa node la - kho co left va right
+            // xoa node la - khong co left va right
             if (!nodeDelete.left && !nodeDelete.right) {
                 if (parentsNode.left.data == data) {
                     parentsNode.left = null
